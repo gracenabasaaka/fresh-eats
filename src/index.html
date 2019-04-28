@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>fresh-eats</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 </head>
+
 <body>
     <nav>
         <ul>
-            <a href="#" class="pull-left"><img src="assets/media/fresh-eats-logo.png" width="25%" alt="fresh eats logo"></a> 
+            <a href="#" class="pull-left"><img src="assets/media/fresh-eats-logo.png" width="25%"
+                    alt="fresh eats logo"></a>
             <li><a href="#How it works">How it works</a></li>
             <li><a href="#Choose a plan">Choose a plan</a></li>
             <li><a href="#View our menu">View our menu</a></li>
@@ -19,89 +23,94 @@
             <li style="float:right"><a class="active" href="#sign Up">sign Up</a></li>
         </ul>
     </nav>
-    <header>
-        <h2>Join Us</h2>
-        <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        
-            <label for="lname">Password</label>
-            <input type="password" name="pwd">
-                    
-            <input type="submit" value="Submit">
-        </form>
-    </header>
-    <h2>How it works</h2>
-    <div class="clearfix">
-        <div class="box" style="background-color:#bbb">
-        <p>Some text inside the box.</p>
-        </div>
-    <div class="box" style="background-color:#ccc">
-    <p>Some text inside the box.</p>
+    <div class="container">
+        <img src="assets/media/barbecue-84671_640.jpg" alt="barbecue" width="100%" class="barbecue">
+        <button class="button">GET STARTED</button>
     </div>
-    <h2>Choose a plan</h2>
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/chicken-2451482_640.jpg">
-            <img src="assets/media/chicken-2451482_640.jpg" alt="chicken" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-    </div>
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/chicken-4102016_640.jpg">
-            <img src="assets/media/chicken-4102016_640.jpg" alt="Forest" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+    <h2 class="how">How it works</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum varius arcu, a laoreet nulla
+                    porta at. Cras bibendum dolor vel malesuada efficitur. Nullam venenatis vel purus pretium sodales.
+                    Fusce euismod sed felis id tincidunt. Pellentesque velit massa, tempor in molestie vel, semper et
+                    purus. Phasellus imperdiet id erat sit amet maximus. Maecenas sed mi vitae lacus efficitur congue
+                    non ut massa. Ut feugiat id dolor eget placerat. Duis vel lectus laoreet, lobortis turpis eleifend,
+                    eleifend libero. Nulla ornare accumsan purus et congue. Aliquam ligula elit, vulputate eget
+                    tristique nec, dignissim sed nulla. Proin porttitor tortor vitae est consectetur elementum.</p>
             </div>
-          </div>
-          
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/duck-479701_640.jpg">
-            <img src="assets/media/duck-479701_640.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="column">
+                <img src="assets/media/rice-2206668_640.jpg" alt="rice">
+            </div>
         </div>
     </div>
-          
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/fish-soup-3054627_640.jpg">
-            <img src="assets/media/fish-soup-3054627_640.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
+    <hr>
+    <div class="form">
+        <h2 class="sign">Sign Up</h2>
+        <form action="/action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
     </div>
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/food-3687804_640.jpg">
-            <img src="assets/media/fish-soup-3054627_640.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
+    <h2 class="plan">Choose a plan</h2>
+    <div class="gallery">
+        <a target="_blank" href="assets/media/chicken-2451482_640.jpg">
+            <img src="assets/media/chicken-2451482_640.jpg" alt="chicken" width="400" height="200">
+        </a>
+        <div class="desc">breakfast</div>
     </div>
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="assets/media/food-712665_640.jpg">
-            <img src="assets/media/rice-2206668_640.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/media/zander-filet-2834177_640.jpg">
+            <img src="assets/media/zander-filet-2834177_640.jpg" alt="fillet" width="400" height="200">
+        </a>
+        <div class="desc">lunch</div>
     </div>
-    <div class="row">
-        <div class="column" style="background-color:#aaa;">
-            <h2>contact info</h2>
-            <p><a href="mailto:info@fresh-eats.com?Subject=Hello%20again" target="_top">Send Mail</a></p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-            <h2>Follow Us</h2>
-            <p></p>
-        </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/media/fish-soup-3054627_640.jpg">
+            <img src="assets/media/fish-soup-3054627_640.jpg" alt="fish" width="400" height="200">
+        </a>
+        <div class="desc">after lunch</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/media/food-3687804_640.jpg">
+            <img src="assets/media/food-3687804_640.jpg" alt="fries" width="400" height="200">
+        </a>
+        <div class="desc">evening meal</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/media/shrimp-1209744_640.jpg">
+            <img src="assets/media/shrimp-1209744_640.jpg" alt="shrimp" width="400" height="200">
+        </a>
+        <div class="desc">dinner</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/media/vegetable-palau-3856048_640.jpg">
+            <img src="assets/media/vegetable-palau-3856048_640.jpg" alt="vegetable-rice" width="400" height="200">
+        </a>
+        <div class="desc">after dinner</div>
     </div>
 </body>
 </html>

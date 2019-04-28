@@ -1,5 +1,4 @@
 body {
-    background: #d1ecbe;
     margin: 0%;
 }
 nav {
@@ -15,6 +14,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #956296;
+    position: fixed;
 }
 li {
     float: left;
@@ -34,97 +34,117 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
     margin: 15px;
-}   
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  h2 {
-    text-align: center;
-  }
-  .box {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-  }
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; 
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+}  
+.barbecue {
+    height: 540px;
+} 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+h2 {
+  color: #956296;
+}
+.how {
+  text-align: center;
+}
+.container-fluid {
+  background: #7FBF7F;
+  width: 100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  font-size: 25px;
+  text-align: justify;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.plan {
+  text-align: center
+}
+div.gallery {
+  margin: 40px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+  height: 200px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.sign {
+  text-align: center
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+container {
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
